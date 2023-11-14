@@ -1,0 +1,120 @@
+.head{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    
+
+    > .img-container {
+          > img {
+           width: 60px;
+           border-radius: 10px;
+       
+        }
+    }
+
+    > .ns{
+        width: 100%;
+        >.txt-info{
+            background-color: #29292E;
+            width: 100%;
+            padding: 20px;
+            border-radius: 15px;
+            position: relative;
+    
+            > p:nth-child(1){
+                color:  #E1E1E6;
+                font-family: Roboto;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 160%; /* 22.4px */
+              
+    
+                > span{
+                    color: #8D8D99;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 160%;
+                }
+            }
+            > p:nth-child(2){
+                color: #8D8D99;
+    
+    
+                 font-family: Roboto;
+                 font-size: 12px;
+                 font-style: normal;
+                 font-weight: 400;
+                 line-height: 160%; 
+                 margin-bottom: 20px;
+            }
+            > p:nth-child(3){
+                color: #C4C4CC;
+    
+    
+                 font-family: Roboto;
+                 font-size: 14px;
+                 font-style: normal;
+                 font-weight: 400;
+                 line-height: 160%; 
+            }
+            > button{
+                position: absolute;
+                top: 10px;
+                cursor: pointer;
+                right: 10px;
+                background-color: transparent;
+                border: none;
+                >img:nth-child(2){
+                    display: none;
+                }
+
+                &:hover{
+                    >img:nth-child(1){
+                        display: none;
+                    }
+                    >img:nth-child(2){
+                        display: block;
+                    }
+                    
+                }
+            }
+        }
+        >footer{
+            > button{
+                display: flex;
+                margin-top: 20px;
+                background-color: transparent;
+                border: none;
+               
+                gap: 10px;
+                cursor: pointer;
+                color: #8D8D99;
+           
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+
+                >img:nth-child(2){
+                    display: none;
+                }
+
+                &:hover{
+                    color: white;
+
+                    >img:nth-child(2){
+                        display: block;
+                    }
+                    >img:nth-child(1){
+                        display: none;
+                    }
+
+                    
+                }
+            }
+        }
+    }
+}

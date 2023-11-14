@@ -1,0 +1,21 @@
+.conteudo{
+    display: flex;
+    gap: 15px;
+  
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    background-color: #202024;
+
+    > img{
+        width: 50px;
+    }
+    > h1 {
+        color: #E1E1E6;
+    
+        font-size: 25.585px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%;
+    }
+}

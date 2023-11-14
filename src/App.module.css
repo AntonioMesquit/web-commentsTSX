@@ -1,0 +1,36 @@
+.wrapper {
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 16em 1fr;
+    gap: 2rem;
+    align-items: flex-start;
+
+    > main{
+        height: 700px;
+        overflow-y: auto;
+        padding-inline: 20px;
+
+        &::-webkit-scrollbar{
+            width: 5px;
+            background-color: #00875F;
+           }
+           &::-webkit-scrollbar-thumb{
+            width: 15px;
+            background-color: #00875e82;
+           }
+    }
+
+
+}
+
+@media screen and (max-width: 768px){
+    .wrapper {
+        grid-template-columns: 1fr;
+
+        > main {
+            overflow-y: unset;
+        }
+    }
+}
